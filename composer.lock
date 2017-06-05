@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "402bd7e3d1dab2230a04da8cc786040e",
-    "content-hash": "dae21f528b20ab489bc46bfb364b803e",
+    "hash": "080438860f766ebc0f770e4c75e4dfea",
+    "content-hash": "812793ef582d1b1abb42e5f4e1253e40",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -885,6 +885,51 @@
             "time": "2017-04-12 19:11:35"
         },
         {
+            "name": "illuminate/redis",
+            "version": "v5.4.19",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/redis.git",
+                "reference": "28ece0b065b4b864a3ba66cc360f4c25911fc115"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/redis/zipball/28ece0b065b4b864a3ba66cc360f4c25911fc115",
+                "reference": "28ece0b065b4b864a3ba66cc360f4c25911fc115",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "5.4.*",
+                "illuminate/support": "5.4.*",
+                "php": ">=5.6.4",
+                "predis/predis": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Redis\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Redis package.",
+            "homepage": "https://laravel.com",
+            "time": "2017-04-04 22:41:06"
+        },
+        {
             "name": "illuminate/session",
             "version": "v5.4.19",
             "source": {
@@ -1484,6 +1529,56 @@
                 "random"
             ],
             "time": "2017-03-13 16:27:32"
+        },
+        {
+            "name": "predis/predis",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nrk/predis.git",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "ext-curl": "Allows access to Webdis when paired with phpiredis",
+                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Predis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniele Alessandri",
+                    "email": "suppakilla@gmail.com",
+                    "homepage": "http://clorophilla.net"
+                }
+            ],
+            "description": "Flexible and feature-complete Redis client for PHP and HHVM",
+            "homepage": "http://github.com/nrk/predis",
+            "keywords": [
+                "nosql",
+                "predis",
+                "redis"
+            ],
+            "time": "2016-06-16 16:22:20"
         },
         {
             "name": "psr/log",
@@ -3605,7 +3700,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "predis/predis": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
